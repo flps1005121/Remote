@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Reference:
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">コベニ</span>
+                <span class="last-name">東山</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">kobenichan@gmail.com</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">111-222-3333</span>
+                <p>目前在master分支下的html檔案</p>
+            </div>
+
+            <div>
+                <img src="kobeni.jpg" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">惡魔獵人 (前)/漢堡店店員 (現) </span>
+                <span class="desc">
+                    之前是東京公安對魔特異4課的惡魔獵人，現在轉職成為漢堡店店員，契約惡魔是秘密。
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">經歷</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">公安</div>
+                            <div class="addr">東京</div>
+                            <div class="duration">??? - 暗之惡魔事件</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">對魔特異四課惡魔獵人</div>
+                            <div class="desc">捕獵惡魔</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">漢堡店</div>
+                            <div class="addr">未知<div>
+                                    <div class="duration">暗之惡魔事件 - ???</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="name">服務員</div>
+                            <div class="desc">陪客人玩跳舞機、賣漢堡</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">教育</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">秘密</div>
+                            <div class="addr">秘密</div>
+                            <div class="duration">秘密</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">秘密</div>
+                            <div class="desc">秘密</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">特殊能力</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">契約惡魔 - 秘密</div>
+                        <div class="text">
+                            雖然我說過我的契約惡魔是秘密，但因為各種事件的發生，大家認為我的契約惡魔是以下幾種：
+                            <br>
+                            摔跤惡魔 -> 在漢堡店打工時，瘋狂摔跤打翻客人的餐點
+                            <br>
+                            猴子惡魔 -> 在某次戰鬥時，身體素質異於常人，十分靈活
+                            <br>
+                            災厄惡魔 -> 跟我搭檔過的同事都死掉了
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">技能</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                打架
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" checked />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" checked />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" checked />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    興趣
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        賺錢、開著愛車到處撞
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
